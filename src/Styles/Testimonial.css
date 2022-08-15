@@ -1,0 +1,46 @@
+#testimonial .row {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+#testimonial .row .testimonialWrap{
+    padding-top: 25px;
+}
+
+#testimonial .row .testimonialWrap h2{
+    font-size: 30px;
+    color: white;
+    font-family: var(--fontTwo);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#testimonial .row .testimonialWrap .dataWrap{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(77, 74, 74, 0.6);
+    width: 90%;
+    height: 300px;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--fontThree);
+}
+
+#testimonial .row .testimonialWrap .dataWrap img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 480px){
+    #testimonial .row .testimonialWrap .dataWrap{
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+#gallary .row {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+#gallary .row .col-sm-12 h2 {
+    padding-top: 25px;
+    padding-bottom: 35px;
+    font-family: var(--fontTwo);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#gallary .row .col-sm-12 .gallaryWrap figure {
+
+    height: 250px;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid rgb(143, 143, 143);
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#gallary .row .col-sm-12 .gallaryWrap figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+
+#gallary .row .col-sm-12 .gallaryWrap figure img {
+
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+#gallary .row .col-sm-12 .gallaryWrap figure img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    #gallary .row .col-sm-12 .gallaryWrap figure {
+        width: 45%;
+    }
+
+    #gallary .row .col-sm-12 h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #gallary .row .col-sm-12 .gallaryWrap figure {
+        width: 95%;
+    }
+
+    #gallary .row .col-sm-12 h2 {
+        font-size: 22px;
+    }
+}

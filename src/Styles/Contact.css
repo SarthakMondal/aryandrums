@@ -1,0 +1,126 @@
+#reachme .row {
+    background-image: url("../Images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+#reachme .row .col-sm-6 .detailsWrap{
+    width: 85%;
+    background-color: rgba(77, 74, 74, 0.6);
+    color: white;
+    padding: 20px;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-family: var(--fontThree);
+}
+
+#reachme .row .col-sm-6 .detailsWrap .icon{
+    width: 60px;
+    height: 60px;
+    background-color: #9c27b0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#reachme .row .col-sm-6 .formWrap {
+    padding-top: 30px;
+    width: 100%;
+}
+
+#reachme .row .col-sm-6 .formWrap h2{
+    font-family: var(--fontTwo);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#reachme .row .col-sm-6 .formWrap form{
+    width: 80%;
+    background-color: rgba(77, 74, 74, 0.6);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+#reachme .row .col-sm-6 .formWrap form label{
+    font-size: 25px;
+    font-family: var(--fontThree);
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+#reachme .row .col-sm-6 .formWrap form input{
+    width: 85%;
+    height: 35px;
+    background: rgba(162, 160, 160, 0.4);
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    outline: none;
+}
+
+#reachme .row .col-sm-6 .formWrap form #text{
+    height: 100px;
+}
+
+#reachme .row .col-sm-6 .formWrap form button{
+    margin-top: 25px;
+    background-color: #9c27b0;
+    color: white;
+    font-family: var(--fontOne);
+    font-size: 18px;
+    height: 55px;
+    width: 175px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#reachme .row .col-sm-6 .formWrap form button:hover{
+    background-color: #792191;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    #reachme .row .col-sm-6 .detailsWrap{
+        width: 95%;
+    }
+
+    #reachme .row .col-sm-6 .formWrap form{
+        width: 95%;
+    }
+
+    #reachme .row .col-sm-6 .formWrap form input{
+        width: 95%;
+    }
+
+    #reachme .row .col-sm-6 .formWrap h2{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #reachme .row .col-sm-6 .formWrap h2{
+        font-size: 22px;
+    }
+    
+    #reachme .row .col-sm-6 .formWrap form label{
+        font-size: 22px;
+    }
+
+    #reachme .row .col-sm-6 .formWrap form button{
+        font-size: 15px;
+    }
+}

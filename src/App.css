@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poiret+One&display=swap');
+
+:root{
+  --navBg: #6a1b9a;
+  --fontOne: 'Abril Fatface', cursive;
+  --fontTwo: 'Cormorant Garamond', serif;
+  --fontThree: 'Poiret One', cursive;
+  --bar: #8e24aa;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+
+body .modal-content{
+  overflow: hidden;
+  padding: 0;
+}
+
+body .modal-content img{
+  width: 100%;
+  height: 350px;
+  
+}
+
+#home, #about, #gallary, #myworks, #testimonial, #reachme{
+  
+}
+

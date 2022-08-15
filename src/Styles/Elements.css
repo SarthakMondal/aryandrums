@@ -1,0 +1,141 @@
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 3;
+}
+
+header .menuOpenAndLogo #logo{
+    height: 50px;
+    width: 50px;
+}
+
+header .menuOpenAndLogo #open{
+    height: 20px;
+    width: 50px;
+    cursor: pointer;
+	float: right;
+	margin: 15px;
+}
+
+header nav{
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	background-color: var(--navBg);
+	right: -200vw;
+	margin-top: -50px;
+	z-index: -1;
+}
+
+header nav .menuClose{
+    float: right;
+    padding: 10px;
+}
+
+header nav .menuClose img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+header nav ul {
+	list-style: none;
+    margin-top: 150px;
+}
+
+header nav ul li{
+	margin: 15px;
+}
+
+header nav ul li a{
+	color: #fff;
+    font-family: var(--fontOne);
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: 500;
+	position: relative;
+	opacity: 0;
+	pointer-events: none;
+}
+
+header nav ul li a:hover{
+    color: #fff;
+}
+
+header nav ul li a:after{
+	content: '';
+	width: 100%;
+	position: absolute;
+	height: 3px;
+	border-radius: 5px;
+	background: #fff;
+	bottom: -10px;
+	left: 0;
+	transform-origin: left;
+	transition: transform .5s ease;
+	transform: scaleX(0);
+}
+
+header nav ul li a:hover:after{
+	transform: scaleX(1);
+}
+
+header .progressWrap {
+	width: 100%;
+	height: 5px;
+	background: rgb(138, 136, 136);
+	position: sticky;
+  }
+  
+header .progressWrap .progressBar {
+	height: 5px;
+	background: var(--bar);
+	width: 0%;
+}
+
+footer{
+	width: 100%;
+	height: 35px;
+	background-color: gray;
+}
+
+footer p{
+	font-family: var(--fontOne);
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 18px;
+	
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+    header nav ul {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header nav ul {
+        margin-top: 100px;
+    }
+
+	header nav ul li a{
+		font-size: 22px;
+	}
+
+	footer p{
+		font-size: 15px;
+		
+	}
+
+	header .menuOpenAndLogo #open{
+		height: 20px;
+		width: 40px;
+	}
+	
+}

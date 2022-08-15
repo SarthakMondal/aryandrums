@@ -1,0 +1,112 @@
+#myworks .row {
+    background-image: url("../Images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+#myworks .row .col-sm-7 .videoWrap{
+    width: 95%;
+    height: 450px;
+    background-color: rgba(77, 74, 74, 0.4);
+    margin-top: 50px;
+    margin-left: 2.5px;
+    border-radius: 5px;
+}
+
+#myworks .row .col-sm-7 .videoWrap iframe{
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+    border: 2px solid rgb(143, 143, 143);
+}
+
+#myworks .row #WorkH{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--fontTwo);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#myworks .row .col-sm-5{
+    padding-top: 30px;
+}
+
+#myworks .row .col-sm-5 .listcardWrap{
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    background-color: rgba(77, 74, 74, 0.4);
+    padding-left: 25px;
+}
+
+#myworks .row .col-sm-5 .listcardWrap::-webkit-scrollbar{
+    width: 0;
+}
+
+#myworks .row .col-sm-5 .listcardWrap .dataWrap{
+    width: 85%;
+    height: 180px;
+    border: 2px solid rgb(143, 143, 143);
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#myworks .row .col-sm-5 .listcardWrap .dataWrap h3{
+    font-weight: bold;
+}
+
+#myworks .row .col-sm-5 .listcardWrap .dataWrap h3, #myworks .row .col-sm-5 .listcardWrap .dataWrap h5{
+    font-family: var(--fontThree);
+    font-size: 18px;
+}
+
+#myworks .row .col-sm-5 .listcardWrap .dataWrap button{
+    margin-top: 15px;
+    background-color: #9c27b0;
+    color: white;
+    font-family: var(--fontOne);
+    font-size: 18px;
+    height: 45px;
+    width: 165px;
+    border: none;
+    outline: none;
+}
+
+#myworks .row .col-sm-5 .listcardWrap .dataWrap button:hover{
+    background-color: #792191;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    #myworks .row .col-sm-5 .listcardWrap .dataWrap h3, #myworks .row .col-sm-5 .listcardWrap .dataWrap h5{
+        font-family: var(--fontThree);
+        font-size: 15px;
+    }
+
+    #myworks .row #WorkH{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #myworks .row #WorkH{
+        font-size: 22px;
+    }
+
+    #myworks .row .col-sm-5 .listcardWrap .dataWrap button{
+        font-size: 14px;
+    }
+}
